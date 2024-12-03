@@ -1,0 +1,86 @@
+* {
+    
+}
+
+body {
+    min-width: 500px;
+}
+
+/* navbar base ruleset (start) */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+
+    font-family: 'Fira Code';
+}
+
+.navbar-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333; /* Neutral text color */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex;
+    gap: 1rem; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Link color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+    text-decoration: underline;
+}
+
+/* navbar base ruleset (end) */
+
+/* navbar responsive ruleset (start) */
+@media screen and  (max-width: 700px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+        min-width: 500px;
+    }
+
+    .navbar-left {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar-right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .navbar-links li a {
+        font-size: 1rem;
+    }
+}
+
+/* navbar responsive ruleset (end) */
