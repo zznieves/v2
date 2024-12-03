@@ -1,5 +1,5 @@
 * {
-    
+    font-family: 'Fira Code';
 }
 
 body {
@@ -13,8 +13,6 @@ body {
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid black;
-
-    font-family: 'Fira Code';
 }
 
 .navbar-left h1 {
@@ -84,3 +82,71 @@ body {
 }
 
 /* navbar responsive ruleset (end) */
+
+
+/* home base ruleset (start) */
+
+#home  * {
+    border: 1px solid black;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home-left {
+    flex: 1;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+.home-left h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-left p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+.home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image a perfect circle */
+    border: 5px solid #fff; /* Optional: Adds a border around the image */
+}
+
+/* Responsive styles for smaller screens (start) */
+@media screen and (max-width: 700px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-left {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .home-right {
+        margin-top: 1rem;
+    }
+
+    .profile-picture {
+        width: 75%;
+        height: 75%;
+    }
+}
+/* Responsive styles for smaller screens (end) */
